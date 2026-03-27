@@ -21,7 +21,7 @@
 
 Name:			trinity-%{tde_pkg}
 Version:		0.8
-Release:		%{?tde_version:%{tde_version}_}3
+Release:		%{?tde_version:%{tde_version}_}4
 Summary:		Theme engine using Qt for GTK+ 2.x and Trinity
 Group:			Applications/Utilities
 URL:			http://www.trinitydesktop.org/
@@ -41,7 +41,6 @@ BuildOption:    -DWITH_GCC_VISIBILITY=%{!?with_clang:ON}%{?with_clang:OFF}
 
 BuildRequires:	trinity-tdelibs-devel >= %{tde_version}
 BuildRequires:	trinity-tdebase-devel >= %{tde_version}
-BuildRequires:  tqt3-dev-tools
 
 BuildRequires:	desktop-file-utils
 
